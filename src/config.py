@@ -10,7 +10,11 @@ EQUITIES = ["AAPL", "MSFT", "AMZN", "JPM", "GS", "XOM", "CVX",
             "JNJ", "PFE", "PG", "KO", "CAT", "NEE", "WMT"]
 WEIGHTS = {**{t: 0.05 for t in EQUITIES}, "TLT": 0.20, "GLD": 0.10}
 
+PORTFOLIO_TICKERS = list(WEIGHTS)
+
 BENCHMARK = "SPY"
+
+PORTFOLIO_TICKERS = list(WEIGHTS.keys())
 
 TICKERS = list(WEIGHTS) + [BENCHMARK]
 
