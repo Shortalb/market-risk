@@ -14,12 +14,6 @@ def load_returns() -> pd.DataFrame:
     returns  = prices.pct_change().dropna()
     return returns[TICKERS]
 
-def equities_returns(weights = WEIGHTS) -> pd.DataFrame:
-    prices = pd.read_csv(DATA_DIR / "prices.csv", index_col = "Date", parse_dates= True)
-    returns  = prices.pct_change().dropna()
-    returns = returns[list(weights.keys())]
-    return returns
-
 def portfolio_returns(returns: pd.DataFrame = None) -> pd.Series:
     if returns is None:
         returns = load_returns()
@@ -45,6 +39,8 @@ def get_mu_p(r : pd.DataFrame, weights : dict) -> float:
 
 @dataclass(frozen=True)
 class Portfolio:
+
+
     tickers : list[str] ## Portfolio tickers only
     returns : pd.DataFrame ## Per equity daily returns data
     portfolio_returns : pd.Series ## Weighted daily portfolio returns

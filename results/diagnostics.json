@@ -1,0 +1,23 @@
+{
+  "Daily Mean": 0.0005260453144570334,
+  "Annualised Mean": 0.13256341924317241,
+  "Standard Dev.": 0.007884451123534586,
+  "Annualised Standard Dev.": 0.1251617813826979,
+  "Skewness": 0.2255574469093105,
+  "Resampled skewness": -0.05540908279146219,
+  "Bowley Skewness": -0.020732570041549055,
+  "Kurtosis": 13.363917763772696,
+  "Jarque-Bera test statistic": 36915.19043246635,
+  "Jarque-Bera test p-value": 0.0,
+  "Autocorrelation (k=1)": -0.11274130502017497,
+  "Autocorr. returns**2 (k=1)": 0.3012816355319785,
+  "JB Breakdown": {
+    "Skew Component": 42.1085032963533,
+    "Kurtosis Component": 36954.13682718763,
+    "Share from Kurtosis": 0.9988618168432986
+  },
+  "Squared ACF": {
+    "Lag-1": 0.3012816355319785,
+    "Lag-126": 0.011884790719107589
+  }
+}
